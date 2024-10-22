@@ -1,0 +1,15 @@
+<!-- templates/otp/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Run Command</title>
+</head>
+<body>
+    <h1>Enter Email</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
